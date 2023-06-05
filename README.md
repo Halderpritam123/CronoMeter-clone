@@ -2,7 +2,7 @@
 # Cronometer Clone - CaloFit
 *An online application to keep track of your health. CaloFit is an online health tracking application that allows you to easily monitor your nutritional intake, fitness goals, and overall well-being. With a user-friendly interface and comprehensive database, CaloFit makes it simple to track your daily meals, water intake, exercises, and other health metrics. The dashboard provides visual representations of your progress, while premium plans offer advanced features such as personalized coaching and meal planning. CaloFit is the perfect tool for anyone looking to improve their health and wellness*
 
-# <a href="https://calofit.netlify.app/">Deployed Link</a>
+# <a href="https://647e06d3ed84ff26b9edc1bf--silver-dieffenbachia-7089e7.netlify.app/">Deployed Link</a>
 
 # Features
  - Landing Page
