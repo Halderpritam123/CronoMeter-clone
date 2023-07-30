@@ -4,7 +4,7 @@ import {AiOutlineSearch} from "react-icons/ai"
 import {AiOutlineMessage} from "react-icons/ai"
 import {MdOutlineNotificationsActive} from "react-icons/md"
 import {AiOutlineArrowRight} from "react-icons/ai"
-import logo from '../../../Assests/iconImg.png'
+import poster from '../../../Assests/poster.png'
 import topBanner from '../../../Assests/bannervideo.mp4'
 const Top = () => {
   return (
@@ -64,7 +64,7 @@ const Top = () => {
           </span>
         </div>
         <div className="imgDiv">
-          <img src={logo} alt="" />  
+          <img src={poster} alt="" />  
           {/* add photo */}
         </div>
       </div>

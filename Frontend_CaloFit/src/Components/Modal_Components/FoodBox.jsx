@@ -40,7 +40,7 @@ export default function FoodBox({ onData }) {
   const [Arraydata, setArrayData] = useState([]);
   let [selectedFood, setSelectedFood] = useState({});
 
-  let url = "https://calofitbackend.cyclic.app/";
+  let url = "https://erin-crow-gear.cyclic.app/";
   let initialDonutData = [
     {
       name: "kcal",
