@@ -80,7 +80,7 @@ const Terms = ({ isDone, handleCheckbox }) => {
 };
 
 //*  Signup Page begins here
-let url = "https://calofitbackend.cyclic.app/";
+let url = "https://erin-crow-gear.cyclic.app/";
 const SignUpPage = () => {
   const InitialState = {
     name: "",
@@ -99,7 +99,7 @@ const SignUpPage = () => {
   // const [matchpassword, setMatchPassword] = useState(null)
   const handleChange = (e) => {
     const { name, value } = e.target;
-    console.log(name, value);
+    // console.log(name, value);
     setState((pre) => ({ ...pre, [name]: value }));
   };
 

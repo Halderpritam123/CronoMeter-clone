@@ -8,7 +8,7 @@ import axios from "axios";
 export const login = (userData) => (dispatch) => {
   dispatch({ type: LOGIN_REQUEST });
   return axios
-    .post(`https://calofitbackend.cyclic.app/users/login`, userData)
+    .post(`https://erin-crow-gear.cyclic.app/users/login`, userData)
     .then((res) => {
       console.log(res);
       localStorage.setItem("token", res.data.token);

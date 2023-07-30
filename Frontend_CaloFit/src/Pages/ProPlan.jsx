@@ -79,7 +79,7 @@ const ProfPlan = () => {
     console.log("Form submitted");
     console.log(formData);
     axios
-      .post("https://calofitbackend.cyclic.app/userplan/add", formData)
+      .post("https://erin-crow-gear.cyclic.app/userplan/add", formData)
       .then(() => console.log("post Success"))
       .catch((err) => console.log(err));
     closeForm();
@@ -92,14 +92,14 @@ const ProfPlan = () => {
   };
   useEffect(() => {
     axios
-      .get("https://calofitbackend.cyclic.app/plan")
+      .get("https://erin-crow-gear.cyclic.app/plan")
       .then((res) => setPlans(res.data));
   }, []);
   // console.log(plans)
   let plan;
   if (plans) {
     plans.forEach((el) => {
-      if (el.name === "Pro") {
+      if (el.name === "Premium") {
         plan = el;
       }
     });

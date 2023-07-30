@@ -30,7 +30,7 @@ export default function LoginPage() {
   const state = useSelector((store) => store.authreducer);
   const dispatch = useDispatch();
 
-  console.log(state);
+  // console.log(state);
   const handleSubmit = () => {
     const userData = { email, password };
     if (email.includes("admin") && password.includes("admin")) {
@@ -38,7 +38,7 @@ export default function LoginPage() {
     }
     dispatch(login(userData)).then((res) => {
       navigate("/diary");
-      console.log(res);
+      // console.log(res);
       // if (res && res.status === "success") {
       //   alert("Success! You have logged in.");
       // } else {
@@ -48,7 +48,7 @@ export default function LoginPage() {
     setEmail("");
     setPassword("");
   };
-  console.log(state);
+  // console.log(state);
   return (
     <Box>
       <NavbarSignUp />

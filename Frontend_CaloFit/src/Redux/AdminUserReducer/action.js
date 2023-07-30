@@ -39,7 +39,7 @@ export const editUser = (_id) => {
 export const deleteUser = (_id)=>(dispatch) => {
     dispatch(fetchUsersRequest());
     axios
-      .delete(`http://localhost:8080/users/${_id}`)
+      .delete(`https://erin-crow-gear.cyclic.app/users/${_id}`)
       .then((response) => {
         dispatch(removeUser(_id));
       })
@@ -54,7 +54,7 @@ export const deleteUser = (_id)=>(dispatch) => {
 
 export const updateUser = (data)=>(dispatch) => {
     axios
-      .put(`http://localhost:8080/users/${data._id}`, data)
+      .put(`https://erin-crow-gear.cyclic.app/users/${data._id}`, data)
       .then((response) => {
         dispatch(editUser(data._id));
         dispatch(fetchUsers());
@@ -70,7 +70,7 @@ export const updateUser = (data)=>(dispatch) => {
 export const fetchUsers =()=>(dispatch)=>{
   // console.log("yes")
           dispatch(fetchUsersRequest);
-          axios.get('http://localhost:8080/users/')
+          axios.get('https://erin-crow-gear.cyclic.app/users/')
             .then((response) => {
               console.log(response.data)
               const users = response.data;

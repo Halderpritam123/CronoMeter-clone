@@ -6,13 +6,16 @@ import { BsPatchQuestion } from 'react-icons/bs'
 import { FaUsers } from 'react-icons/fa'
 import { MdFoodBank } from 'react-icons/md'
 import { FiActivity } from 'react-icons/fi'
+import { Link } from "react-router-dom";
 const Sidebar = () => {
   return (
     <div className='sideBar grid'>
+      <Link to='/'>
       <div className='logoDiv flex'>
         <img src="https://cronometer.com/blog/wp-content/uploads/2019/04/Cronometer_Logomark_Mandarin.png" alt="" />
         <h2>CaloFit</h2>
       </div>
+      </Link>
       <div className='menuDiv'>
         <ul className='menuLists grid'>
           <li className='listItem'>

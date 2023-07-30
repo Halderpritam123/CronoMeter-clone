@@ -82,7 +82,7 @@ const GoldPlan = () => {
     console.log("Form submitted");
     console.log(formData);
     axios
-      .post("https://calofitbackend.cyclic.app/userplan/add", formData, {
+      .post("https://erin-crow-gear.cyclic.app/userplan/add", formData, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -108,7 +108,7 @@ const GoldPlan = () => {
   };
   useEffect(() => {
     axios
-      .get("https://calofitbackend.cyclic.app/plan")
+      .get("https://erin-crow-gear.cyclic.app/plan")
       .then((res) => setPlans(res.data));
   }, []);
   // console.log(plans)
